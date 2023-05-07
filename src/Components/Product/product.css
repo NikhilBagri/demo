@@ -1,0 +1,24 @@
+  .top-products-card {
+    position: absolute;
+    top: 500px;
+    left: 450px;
+    width: 480px;
+    height: 200px;
+    border: 2rem;
+  border-radius: 20px;
+  background-color: white;
+  }
+
+  .top{
+    position: absolute;
+    top: 20px;
+    font-weight: bold;
+    left: 40px;
+  }
+
+  .chart2{
+    position: absolute;
+    top: 40px;
+    width: fit-content;
+    left: 30px;
+  }

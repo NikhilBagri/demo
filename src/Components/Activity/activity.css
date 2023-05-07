@@ -1,0 +1,23 @@
+  .activities-card{
+    position: absolute;
+    top: 225px;
+    left: 450px;
+    width: 1000px;
+    height: 245px;
+    border-radius: 20px;
+    border: 2rem;
+    background-color: white;
+  }
+
+  .chart{
+   position: absolute;
+   top: 35px;
+   width: 1000px;
+  }
+  .name{
+    width: fit-content;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-weight: bold;
+  }

@@ -1,0 +1,71 @@
+.schedules-card {
+  position: absolute;
+  top: 500px;
+  left: 970px;
+  width: 480px;
+  height: 200px;
+  border: 2rem;
+  border-radius: 20px;
+  background-color: white;
+}
+.todays-schedule {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  font-weight: bold;
+  font-size: 17px;
+}
+.check-operation-at-giga-factor-parent {
+    position: absolute;
+    top: 120px;
+    left: 40px;
+    width: 227px;
+    height: 66px;
+    font-size: small;
+    font-weight: 200;
+  }
+
+  .card10 {
+    position: absolute;
+    top: 289px;
+    left: 380px;
+    width: 1000px;
+    height: 359px;
+  }
+  .card10{
+    top: 0;
+    left: 0;
+    width: 480px;
+    height: 200px;
+  }
+
+  .card9 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .card9 {
+    position: absolute;
+  }
+  .meeting-with-suppliers-from-ku-parent {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    width: 251px;
+    height: 66px;
+    font-size: small;
+    font-weight: 200;
+  }
+  .meeting-with-suppliers {
+    font-weight: 450;
+  }
+  .see-all {
+    position: absolute;
+    top: 20px;
+    left: 398px;
+    font-size: small;
+    font-weight: 100;
+  }
+  

@@ -1,0 +1,211 @@
+.card,
+.card1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+.card1 {
+  height: 85%;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  background-color: #f4ecdd;
+  border-radius: 20px;
+}
+.card {
+  width: 221.05px;
+  height: 120px;
+}
+.b,
+.total-transactions1 {
+  position: absolute;
+  top: 45px;
+  left: 25.11px;
+  display: inline-block;
+  width: 126px;
+  
+}
+.total-transactions1{
+  font-size: small;
+}
+.b {
+  top: 67px;
+  width: 65.26px;
+  font-size: large
+}
+.card3,
+.total-transactions {
+  position: absolute;
+  top: 92px;
+  left: 710px;
+  width: 221.05px;
+  height: 100px;
+}
+.card7,
+.total-users {
+  position: absolute;
+  top: 92px;
+  left: 637.89px;
+  width: 221.05px;
+  height: 100px;
+}
+.card3 {
+  height: 85%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ddefe0;
+  border-radius: 20px;
+}
+.total-revenues1{
+  font-size: small;
+}
+.b1,
+.total-revenues1 {
+  position: absolute;
+  top: 45px;
+  left: 25px;
+  display: inline-block;
+  width: 124px;
+}
+.b1 {
+  top: 67px;
+  font-size: large;
+  
+}
+.vector-icon {
+  position: absolute;
+  height: 20%;
+  width: 11.94%;
+  top: 16.67%;
+  right: 11.6%;
+  bottom: 63.33%;
+  left: 76.45%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.card5,
+.total-revenues {
+  position: absolute;
+  top: 92px;
+  left: 450px;
+  width: 221.05px;
+  height: 104px;
+  
+}
+.card5 {
+  height: 85%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #efdada;
+  border-radius: 20px;
+}
+.total-likes1 {
+  font-size: small;
+}
+.b2,
+.total-likes1 {
+  position: absolute;
+  top: 45px;
+  left: 25.21px;
+  display: inline-block;
+  width: 81px;
+  
+}
+.b2 {
+  top: 67px;
+  left: 25.58px;
+  font-size: large;
+  width: 65.26px;
+}
+.vector-icon1 {
+  position: absolute;
+  height: 20%;
+  width: 10.54%;
+  top: 16.67%;
+  right: 11.56%;
+  bottom: 63.33%;
+  left: 77.9%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.card7,
+.total-likes {
+  position: absolute;
+  top: 92px;
+  left: 970px;
+  width: 221.05px;
+  height: 120px;
+}
+.card7 {
+  height: 85%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #dee0ef;
+  border-radius: 20px;
+}
+.vector-icon2 {
+  position: absolute;
+  height: 20%;
+  width: 16.65%;
+  top: 16.67%;
+  right: 11.39%;
+  bottom: 63.33%;
+  left: 71.95%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.total-users1 {
+  font-size: small;
+}
+.b3,
+.total-users1 {
+  position: absolute;
+  top: 45px;
+  left: 25.58px;
+  display: inline-block;
+  width: 85.26px;
+  
+}
+.b3 {
+  top: 67px;
+  width: 44.21px;
+  font-size: large
+}
+.total-users {
+  position: absolute;
+  top: 92px;
+  left: 1229px;
+  width: 221.05px;
+  height: 120px;
+}
+.card9 {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.card8,
+.card9 {
+  position: absolute;
+}
+.card8 {
+  top: 0;
+  left: 0;
+  width: 1000px;
+  height: 359px;
+}
