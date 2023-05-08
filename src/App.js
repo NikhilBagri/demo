@@ -1,24 +1,29 @@
-import './App.css';
-import Sidebar from './Components/Sidebar/sideBar';
-import Dashboard from './Components/Dashboard/dashBoard';
-import Activity from './Components/Activity/activity';
-import Header from './Components/Header/header';
-import Product from './Components/Product/product';
-import Schedule from './Components/Schedule/schedule';
-import SignIn from './Components/Signin/signIn';
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import SignIn from "./Components/Signin/signIn";
+import Index from "./Components";
+import { AuthContextProvider } from "./Context/AuthContext";
+import Protected from "./Components/protected";
 // import Dashboard from './Dashboard'
 
 function App() {
   return (
-    <div >
-      {/* <SignIn/> */}
-      <Header/>
-      <Dashboard/>
-      <Sidebar/>
-      <Activity/>
-      <Product/>
-      <Schedule/>
+    <div>
       {/* <Dashboard/> */}
+      <AuthContextProvider>
+        <Routes>
+          <Route path="/" element={<SignIn />}></Route>
+          <Route
+            path="/dashboard"
+            element={
+              <Protected>
+                <Index />
+              </Protected>
+            }
+          ></Route>
+        </Routes>
+      </AuthContextProvider>
+      {/* {/* <LineChart/> */}
     </div>
   );
 }

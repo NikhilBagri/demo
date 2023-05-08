@@ -4,9 +4,13 @@
     left: 450px;
     width: 1000px;
     height: 40px;
+    
   }
   .dashboard2 {
+    position: absolute;
     font-size: x-large;
+    top: 16.67%;
+    bottom: 16.67%;
   }
   .search,
   .search-icon {
@@ -32,25 +36,43 @@
     background-color: white;
   }
   .search-bar {
-    left: 713px;
+    left: 725px;
     width: 180px;
     border-radius: 20px;
     cursor: pointer;
+    top: 16.67%;
+    bottom: 16.67%;
    
   }
-  .mask-group-icon {
+  .signin__button{
+      position: absolute;
+      top: 5px;
+      left: 970px;
+      height: 30px;
+      width: 30px;
+      object-fit: cover;
+      cursor: pointer;
+      border:none;
+  }
+  .logout {
+    position: absolute;
+    top: 16.67%;
+    bottom: 16.67%;
     left: 970px;
     width: 30px;
     object-fit: cover;
+    cursor: pointer;
+    border:none;
+
   }
   .vector-icon6 {
     position: absolute;
     height: 66.67%;
     width: 1.8%;
     top: 16.67%;
-    right: 5.9%;
     bottom: 16.67%;
-    left: 92.3%;
+    right: 5.9%;
+    left: 93.3%;
     max-width: 100%;
     overflow: hidden;
     max-height: 100%;

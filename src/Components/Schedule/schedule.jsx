@@ -1,12 +1,10 @@
 import React from "react";
 import "./schedule.css";
 
-
 const Schedule = () => {
- 
   return (
     <>
-     <div className="schedules-card">
+      <div className="schedules-card">
         <div className="card10">
           <div className="card9" />
         </div>

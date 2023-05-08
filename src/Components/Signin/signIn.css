@@ -1,6 +1,6 @@
 .sign__in {
   display: flex;
-  background-color: #F5F5F5;
+  background-color: #c7c3c36c;
   max-width: fit-content;
 }
 .left__side {
@@ -55,6 +55,11 @@
   background-color: white;
   color: 
   #858585;
+}
+.google__icon{
+  position: absolute;
+  top: 7px;
+  left: 12px;
 }
 .apple {
   position: absolute;
@@ -135,6 +140,7 @@ top: 8px;
   left: 40px;
   color: 
   #346BD4;
+  cursor: pointer;
 }
 .register{
   position: absolute;
@@ -147,4 +153,5 @@ top: 8px;
 .register2{
   color: 
   #346BD4;
+  cursor: pointer;
 }
