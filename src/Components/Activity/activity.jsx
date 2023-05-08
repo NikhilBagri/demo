@@ -1,61 +1,7 @@
-import React from "react";
-import "./activity.css";
-import { useEffect } from "react";
-import {
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-} from "recharts";
 
-// Sample chart data
-const data = [
-  {
-    name: "Page A",
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
-  },
-  {
-    name: "Page B",
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
-  },
-  {
-    name: "Page C",
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
-  },
-  {
-    name: "Page D",
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
-  },
-  {
-    name: "Page E",
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
-  },
-  {
-    name: "Page F",
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
-  },
-  {
-    name: "Page G",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
-  },
-];
+import "./activity.css";
+import React, { useEffect, useState } from 'react';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 
 const Activity = () => {
   let API =
@@ -66,54 +12,47 @@ const Activity = () => {
         'x-access-token': 'coinranking11509cab5cd35991f22cf0f745fec0dc4bc07ec3cc70a476',
       },
     };
-  const fetchApiData = async (url) => {
-    try {
-      // const res = await fetch(url);
-      // const data = await res.json();
-      // console.log(data.rates);
-      fetch(url, options)
-        .then((response) => response.json())
-        .then((result) => console.log(result));
-      // pdata[0]["student"] = 50;
-    } catch (error) {
-      console.log(error);
-    }
-  };
-  // bitcoin uuid Qwsogvtv82FCd
+  const [chartData, setChartData] = useState([]);
+
   useEffect(() => {
-    fetchApiData(API);
+    fetch(API, options)
+      .then(response => response.json())
+      .then(data => {
+        if (data.status === 'success') {
+          const history = data.data.history.slice(-7); // Get the last 7 weeks of data
+          const chartData = history.map(item => ({
+            name: new Date(item.timestamp * 1000).toLocaleString(),
+            pv: parseFloat(item.price),
+          }));
+          setChartData(chartData);
+        }
+      })
+      .catch(error => {
+        console.log('Error fetching data:', error);
+      });
   }, []);
   return (
     <>
       <div className="activities-card">
         <div className="name">Activities</div>
-        {/* <div className="linechart">
-          <LineChart />
-        </div> */}
         <div className="chart">
-          <LineChart
-            width={1000}
-            height={200}
-            data={data}
-            margin={{
-              top: 5,
-              right: 30,
-              left: 20,
-              bottom: 5,
-            }}
-          >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
-            <YAxis />
-            <Tooltip />
-            <Line
-              type="monotone"
-              dataKey="pv"
-              stroke="#8884d8"
-              activeDot={{ r: 8 }}
-            />
-            <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
-          </LineChart>
+        <LineChart
+      width={990}
+      height={200}
+      data={chartData}
+      margin={{
+        top: 9,
+        right: 30,
+        left: 20,
+        bottom: 5,
+      }}
+    >
+      <CartesianGrid strokeDasharray="3 3" />
+      <XAxis dataKey="name" />
+      <YAxis />
+      <Tooltip />
+      <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
+    </LineChart>
         </div>
       </div>
     </>

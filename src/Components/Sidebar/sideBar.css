@@ -23,6 +23,11 @@
     text-align: left;
     cursor: pointer;
   }
+  .help{font-size: 14px;
+  }
+  .contact-us{
+    font-size: 14px;
+  }
   .contact-us,
   .dashboard1,
   .schedules,

@@ -23,6 +23,7 @@
     height: 66px;
     font-size: small;
     font-weight: 200;
+    color: #999999;
   }
 
   .card10 {
@@ -57,9 +58,11 @@
     height: 66px;
     font-size: small;
     font-weight: 200;
+    color: #999999;
   }
   .meeting-with-suppliers {
-    font-weight: 450;
+    font-weight: 700;
+    color: #666666;
   }
   .see-all {
     position: absolute;
@@ -67,5 +70,6 @@
     left: 398px;
     font-size: small;
     font-weight: 100;
+    color: #999999;
   }
   
